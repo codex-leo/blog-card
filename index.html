@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Blog preview card</title>
+
+
+  <style>
+    *{padding:0;margin:0;box-sizing: border-box;}
+    body {background-color:hsl(47, 88%, 63%) ;}
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .container {display: flex; justify-content: center; align-items: center; min-height: 100vh; background-color: hsl(47, 88%, 63%); width: 100%;font-family: Figtree, 'Arial Narrow', Arial, sans-serif; margin-bottom: 15px; }
+    .blog-text {margin: 15px;}
+    .container > .blog-card{display: grid;width: 300px;border-radius: 15px;text-align: left;box-shadow: 5px 5px 1px ;background-color: hsl(0, 0%, 100%);}
+    .blog-text h2{margin: 1px; padding:10px 10px 5px 10px; color:hsl(218, 44%, 22%);font-weight: 800;transition: 0.3s;}
+    .blog-text p {font-size: 16px;margin: 1px; padding:10px 10px 5px 10px; color:hsl(0, 0%, 42%);font-weight: 500;}
+    .blog-img img{max-width: 100%;border-radius: 15px;}
+    .blog-img{margin: 15px;}
+    .blog-author {margin-left: 15px;font-size: 15px;font-weight: 800;margin-bottom: 20px;}
+    .blog-author img{max-width: 12%;position: relative;bottom: -9px;right: 8px;}
+    .sub-txt h3{font-size: 15px;margin: 14px;padding: auto;font-weight: 500;}
+    .sub-txt h2{font-size: 16px;background-color: hsl(47, 88%, 63%);font-weight: 900;max-width: 85px;border-radius: 10px; margin-left: 10px;}
+    .blog-text h2:hover {color: hsl(47, 88%, 63%);cursor: pointer;}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="blog-card">
+      <div class="blog-img">
+        <img src="./assets/images/illustration-article.svg" alt="blog illustration">
+      </div>
+      <div class="blog-text">
+        <div class="sub-txt">
+          <h2>Learning </h2>
+
+           <h3>Published 21 Dec 2023</h3>
+      </div>
+      
+        <h2>HTML & CSS foundations</h2>
+      
+        <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+     
+        <div class="blog-author">
+          
+            <img src="./assets/images/image-avatar.webp" alt="image-avatar"> Greg Hooper
+        </div>
+      </div>
+      
+    </div>
+  </div>
+ 
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Codex-leo</a>.
+  </div>
+</body>
+</html>
